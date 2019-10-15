@@ -31,8 +31,8 @@
                 Published: Sat 12 October 2019
         </abbr>
 		<br />
-        <abbr class="modified" title="2019-10-14T20:00:00+08:00">
-                Updated: Mon 14 October 2019
+        <abbr class="modified" title="2019-10-15T20:00:00+08:00">
+                Updated: Tue 15 October 2019
         </abbr>
 
         <address class="vcard author">
@@ -121,48 +121,43 @@
 <ul>
 <li>refresh your browser (F5), then your first should be there</li>
 </ul>
-<h2>Publish to github (optinon 1)</h2>
+<h2>Publish to github</h2>
 <ul>
-<li>create a remote repository at github using [your_username].github.io as name</li>
-<li>create a local repository in the output folder</li>
+<li>install package ghp-import</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="n">cd</span> <span class="k">output</span>
-<span class="n">git</span> <span class="n">init</span>
-</pre></div>
-
-
-<ul>
-<li>commit everything</li>
-</ul>
-<div class="highlight"><pre><span></span><span class="n">git</span> <span class="k">add</span> <span class="p">.</span>
-<span class="n">git</span> <span class="k">commit</span> <span class="o">-</span><span class="n">m</span> <span class="ss">&quot;init&quot;</span>
-</pre></div>
-
-
-<ul>
-<li>add remote and push</li>
-</ul>
-<div class="highlight"><pre><span></span><span class="n">git</span><span class="w"> </span><span class="n">remote</span><span class="w"> </span><span class="k">add</span><span class="w"> </span><span class="n">origin</span><span class="w"> </span><span class="nl">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="o">/[</span><span class="n">your_username</span><span class="o">]/[</span><span class="n">your_username</span><span class="o">]</span><span class="p">.</span><span class="n">github</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">git</span><span class="w"></span>
-<span class="n">git</span><span class="w"> </span><span class="n">push</span><span class="w"> </span><span class="o">-</span><span class="n">u</span><span class="w"> </span><span class="n">origin</span><span class="w"> </span><span class="n">master</span><span class="w"></span>
-</pre></div>
-
-
-<ul>
-<li>check your browser at https://[your_username].github.io</li>
-</ul>
-<h2>Publish to github (optinon 2)</h2>
-<p>I figured out there is a make script for building and publishing to github. However a package is required, ghp-import</p>
 <div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ghp</span><span class="o">-</span><span class="n">import</span>
 </pre></div>
 
 
-<p>Then you can run the script.</p>
-<div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">publish</span>
-<span class="n">make</span> <span class="n">github</span>
+<ul>
+<li>
+<p>create a github repository named [your_username].github.io</p>
+</li>
+<li>
+<p>setup local repository, and add a remote</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="n">git</span><span class="w"> </span><span class="n">init</span><span class="w"></span>
+<span class="n">git</span><span class="w"> </span><span class="n">remote</span><span class="w"> </span><span class="k">add</span><span class="w"> </span><span class="n">origin</span><span class="w"> </span><span class="nl">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="o">/[</span><span class="n">your_username</span><span class="o">]/[</span><span class="n">your_username</span><span class="o">]</span><span class="p">.</span><span class="n">github</span><span class="p">.</span><span class="n">io</span><span class="p">.</span><span class="n">git</span><span class="w"></span>
 </pre></div>
 
 
-<p>And then following prompt for username and password. Done!</p>
+<ul>
+<li>build for publishing</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">publish</span>
+</pre></div>
+
+
+<ul>
+<li>publish to github. (to master branch)</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">github</span>
+</pre></div>
+
+
+<p>And then following prompt for username and password.</p>
+<p>Your github page will be available shortly.  You may push your source files to other branch in the same repository.</p>
 <p>The End.</p>
     </div><!-- /.entry-content -->
 
@@ -182,8 +177,8 @@
                         <ul>
                             <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
 
-                            <li><a href="https://twitter.com/jackneer">Twitter</a></li>
-                            <li><a href="https://githib.com/jackneer">GitHub</a></li>
+                            <li><a href="https://twitter.com/jackneer">twitter</a></li>
+                            <li><a href="https://githib.com/jackneer">github</a></li>
                         </ul>
                 </div><!-- /.social -->
         </section><!-- /#extras -->

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Jackneer - blog</title><link href="/" rel="alternate"></link><link href="/feeds/blog.atom.xml" rel="self"></link><id>/</id><updated>2019-10-14T20:00:00+08:00</updated><entry><title>Fisrt Post with Pelican</title><link href="/first-post-with-pelican.html" rel="alternate"></link><published>2019-10-12T10:00:00+08:00</published><updated>2019-10-14T20:00:00+08:00</updated><author><name>Jack</name></author><id>tag:None,2019-10-12:/first-post-with-pelican.html</id><summary type="html">&lt;p&gt;From JekyII, Hugo and then Pelican, I am always looking for different ways of doing things. JekyII and Hugo are great, got more then what I need to make a blog. They have a great number of market share, supporting communities. If you are looking for a static site generator …&lt;/p&gt;</summary><content type="html">&lt;p&gt;From JekyII, Hugo and then Pelican, I am always looking for different ways of doing things. JekyII and Hugo are great, got more then what I need to make a blog. They have a great number of market share, supporting communities. If you are looking for a static site generator, they are one of the kind. Now, I am moving forward. Since leaning Python now, I want to do as many as possible with Python. After googling, Pelican goes into my house. Let me show you waht I have done.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Jackneer - blog</title><link href="/" rel="alternate"></link><link href="/feeds/blog.atom.xml" rel="self"></link><id>/</id><updated>2019-10-15T20:00:00+08:00</updated><entry><title>Fisrt Post with Pelican</title><link href="/first-post-with-pelican.html" rel="alternate"></link><published>2019-10-12T10:00:00+08:00</published><updated>2019-10-15T20:00:00+08:00</updated><author><name>Jack</name></author><id>tag:None,2019-10-12:/first-post-with-pelican.html</id><summary type="html">&lt;p&gt;From JekyII, Hugo and then Pelican, I am always looking for different ways of doing things. JekyII and Hugo are great, got more then what I need to make a blog. They have a great number of market share, supporting communities. If you are looking for a static site generator …&lt;/p&gt;</summary><content type="html">&lt;p&gt;From JekyII, Hugo and then Pelican, I am always looking for different ways of doing things. JekyII and Hugo are great, got more then what I need to make a blog. They have a great number of market share, supporting communities. If you are looking for a static site generator, they are one of the kind. Now, I am moving forward. Since leaning Python now, I want to do as many as possible with Python. After googling, Pelican goes into my house. Let me show you waht I have done.&lt;/p&gt;
 &lt;p&gt;Python and git is required. I have python3 here.&lt;/p&gt;
 &lt;h2&gt;Setup Pelican&lt;/h2&gt;
 &lt;ul&gt;
@@ -80,48 +80,43 @@
 &lt;ul&gt;
 &lt;li&gt;refresh your browser (F5), then your first should be there&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2&gt;Publish to github (optinon 1)&lt;/h2&gt;
+&lt;h2&gt;Publish to github&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;create a remote repository at github using [your_username].github.io as name&lt;/li&gt;
-&lt;li&gt;create a local repository in the output folder&lt;/li&gt;
+&lt;li&gt;install package ghp-import&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;cd&lt;/span&gt; &lt;span class="k"&gt;output&lt;/span&gt;
-&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="n"&gt;init&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;commit everything&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="k"&gt;add&lt;/span&gt; &lt;span class="p"&gt;.&lt;/span&gt;
-&lt;span class="n"&gt;git&lt;/span&gt; &lt;span class="k"&gt;commit&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;m&lt;/span&gt; &lt;span class="ss"&gt;&amp;quot;init&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;add remote and push&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;remote&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;add&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/[&lt;/span&gt;&lt;span class="n"&gt;your_username&lt;/span&gt;&lt;span class="o"&gt;]/[&lt;/span&gt;&lt;span class="n"&gt;your_username&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;io&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;push&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;u&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;master&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;ul&gt;
-&lt;li&gt;check your browser at https://[your_username].github.io&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Publish to github (optinon 2)&lt;/h2&gt;
-&lt;p&gt;I figured out there is a make script for building and publishing to github. However a package is required, ghp-import&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;pip&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;ghp&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;import&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Then you can run the script.&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;make&lt;/span&gt; &lt;span class="n"&gt;publish&lt;/span&gt;
-&lt;span class="n"&gt;make&lt;/span&gt; &lt;span class="n"&gt;github&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;create a github repository named [your_username].github.io&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;setup local repository, and add a remote&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;init&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;remote&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;add&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="n"&gt;origin&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nl"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;com&lt;/span&gt;&lt;span class="o"&gt;/[&lt;/span&gt;&lt;span class="n"&gt;your_username&lt;/span&gt;&lt;span class="o"&gt;]/[&lt;/span&gt;&lt;span class="n"&gt;your_username&lt;/span&gt;&lt;span class="o"&gt;]&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;github&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;io&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;git&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;And then following prompt for username and password. Done!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;build for publishing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;make&lt;/span&gt; &lt;span class="n"&gt;publish&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;publish to github. (to master branch)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;make&lt;/span&gt; &lt;span class="n"&gt;github&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And then following prompt for username and password.&lt;/p&gt;
+&lt;p&gt;Your github page will be available shortly.  You may push your source files to other branch in the same repository.&lt;/p&gt;
 &lt;p&gt;The End.&lt;/p&gt;</content><category term="python"></category><category term="pelican"></category><category term="git"></category><category term="github"></category></entry><entry><title>Hugo GitHub Publishing</title><link href="/hugo-github-publishing.html" rel="alternate"></link><published>2019-03-13T14:26:05+08:00</published><updated>2019-03-13T14:26:05+08:00</updated><author><name>Jack</name></author><id>tag:None,2019-03-13:/hugo-github-publishing.html</id><summary type="html">&lt;p&gt;There are a couple ways to publish hugo site to GitHub. I provide a simple way althouth url doesn't not look like https://[username].GitHub.io but https://[username].GitHub.io/[blog] in which [blog] is your repository name.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
