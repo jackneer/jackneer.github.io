@@ -1,6 +1,6 @@
 Title: Fisrt Post with Pelican
-Date: 2019-10-12T10:00:00+08:00
-Modified: 2019-10-14T20:00:00+08:00
+Date: 2019-10-12 10:00
+Modified: 2019-10-15 20:00
 Category: blog
 Tags: python, pelican, git, github
 Slug: first-post-with-pelican
@@ -81,42 +81,35 @@ Your Post content
 
 - refresh your browser (F5), then your first should be there
 
-## Publish to github (optinon 1)
-- create a remote repository at github using [your_username].github.io as name
-- create a local repository in the output folder
-```
-cd output
-git init
-```
-- commit everything
-```
-git add .
-git commit -m "init"
-```
+## Publish to github
 
-- add remote and push
-```
-git remote add origin https://github.com/[your_username]/[your_username].github.io.git
-git push -u origin master
-```
-
-- check your browser at https://[your_username].github.io
-
-## Publish to github (optinon 2)
-
-I figured out there is a make script for building and publishing to github. However a package is required, ghp-import
+- install package ghp-import
 
 ```
 pip install ghp-import
 ```
 
-Then you can run the script.
+- create a github repository named [your_username].github.io
+
+- setup local repository, and add a remote
+```
+git init
+git remote add origin https://github.com/[your_username]/[your_username].github.io.git
+```
+
+- build for publishing
 ```
 make publish
+```
+
+- publish to github. (to master branch)
+```
 make github
 ```
 
-And then following prompt for username and password. Done!
+And then following prompt for username and password.
+
+Your github page will be available shortly.  You may push your source files to other branch in the same repository.
 
 The End.
 
