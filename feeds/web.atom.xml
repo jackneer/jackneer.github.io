@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Jackneer - web</title><link href="https://jackneer.github.io/" rel="alternate"></link><link href="https://jackneer.github.io/feeds/web.atom.xml" rel="self"></link><id>https://jackneer.github.io/</id><updated>2019-03-15T11:52:59+08:00</updated><entry><title>Ubuntu Apache2 Certbot</title><link href="https://jackneer.github.io/ubuntu-apache2-certbot.html" rel="alternate"></link><published>2019-03-15T11:52:59+08:00</published><updated>2019-03-15T11:52:59+08:00</updated><author><name>Jack</name></author><id>tag:jackneer.github.io,2019-03-15:/ubuntu-apache2-certbot.html</id><summary type="html">&lt;h2&gt;Enviroment:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ubuntu 18.04&lt;/li&gt;
+&lt;li&gt;Python 3.6&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Prerequisites:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A target web application that you want to host, mantis for example.&lt;/li&gt;
+&lt;li&gt;A domain name point to server, mantis.mydomain.com for example&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Installations:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Apache2&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install apache2
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+sudo systemctl restart apache2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Certbot&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo add-apt-repository …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;Enviroment:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ubuntu 18.04&lt;/li&gt;
+&lt;li&gt;Python 3.6&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Prerequisites:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A target web application that you want to host, mantis for example.&lt;/li&gt;
+&lt;li&gt;A domain name point to server, mantis.mydomain.com for example&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Installations:&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Apache2&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo apt-get install apache2
+sudo a2enmod proxy
+sudo a2enmod proxy_http
+sudo systemctl restart apache2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Certbot&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo add-apt-repository ppa:certbot/certbot
+sudo apt install python-certbot-apache    
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;Config Apache with a new site, (mentis)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;create configuration file&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo nano /etc/apache2/sites-available/mantis.conf
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;with following content&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nt"&gt;&amp;lt;VirtualHost&lt;/span&gt; &lt;span class="err"&gt;*:80&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+DocumentRoot &amp;quot;/var/www/html/mantis&amp;quot;
+ServerName mantis.wedev.tk
+ErrorLog &amp;quot;/var/log/apache2/mantis-error_log&amp;quot;
+CustomLog &amp;quot;/var/log/apache2/mantis-access_log&amp;quot; combined
+&lt;span class="nt"&gt;&amp;lt;Directory&lt;/span&gt; &lt;span class="err"&gt;&amp;quot;/var/www/html/mantis/&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+DirectoryIndex index.php index.html
+Options FollowSymLinks
+AllowOverride All
+Require all granted
+&lt;span class="nt"&gt;&amp;lt;/Directory&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/VirtualHost&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;run commands&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo a2ensite mantis.conf
+sudo systemctl reload apache2
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ol&gt;
+&lt;li&gt;ask certbot to generate SSL for your new site&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;sudo certbot --apache -d mantis.xxx.xxx
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;You should be able to open browser at https://mantis.xxx.xxx now.&lt;/p&gt;</content><category term="ubuntu"></category><category term="certbot"></category><category term="apache2"></category></entry></feed>
