@@ -26,7 +26,7 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/jackneer'),
-	('github', 'https://githib.com/jackneer'),
+	('github', 'https://github.com/jackneer'),
 	('envelope','mailto:clk500@hotmail.com'),)
 
 DEFAULT_PAGINATION = False
