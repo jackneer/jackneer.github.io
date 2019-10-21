@@ -1,6 +1,6 @@
 Title: Hugo GitHub Publishing
 Date: 2019-03-13T14:26:05+08:00
-Category: blog
+Category: hugo
 Tags: hugo, git, github
 Author: Jack
 

@@ -1,6 +1,6 @@
 Title: WebGL Starter
 Date: 2019-03-21T20:37:03+08:00
-Category: programming
+Category: webgl
 Tags: webgl
 Author: Jack
 

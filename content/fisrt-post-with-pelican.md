@@ -1,7 +1,7 @@
 Title: Fisrt Post with Pelican
 Date: 2019-10-12 10:00
 Modified: 2019-10-15 20:00
-Category: blog
+Category: python
 Tags: python, pelican, git, github
 Slug: first-post-with-pelican
 Author: Jack

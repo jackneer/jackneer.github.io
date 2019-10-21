@@ -1,0 +1,753 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"no",
+				"None"
+			],
+			[
+				"s",
+				"save"
+			],
+			[
+				"fe",
+				"fetch_today"
+			],
+			[
+				"r",
+				"range"
+			],
+			[
+				"m",
+				"month"
+			],
+			[
+				"for",
+				"format"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"l",
+				"label\tTag"
+			],
+			[
+				"data",
+				"datalist"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"i",
+				"input\tTag"
+			],
+			[
+				"fo",
+				"form\tTag"
+			],
+			[
+				"ro",
+				"route"
+			],
+			[
+				"row",
+				"row_header"
+			],
+			[
+				"j",
+				"json_data"
+			],
+			[
+				"re",
+				"ret"
+			],
+			[
+				"mode",
+				"models"
+			],
+			[
+				"c",
+				"code"
+			],
+			[
+				"pg",
+				"pgnet"
+			],
+			[
+				"v",
+				"volumes"
+			],
+			[
+				"da",
+				"daily"
+			],
+			[
+				"o",
+				"onMarket"
+			],
+			[
+				"st",
+				"stockName"
+			],
+			[
+				"vo",
+				"volumn"
+			],
+			[
+				"S",
+				"Stock"
+			],
+			[
+				"de",
+				"debug"
+			],
+			[
+				"e",
+				"errMsg"
+			],
+			[
+				"p",
+				"password"
+			],
+			[
+				"db",
+				"dbname"
+			],
+			[
+				"ja",
+				"jack"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "Title: Add a Theme to Pelican\nDate: 2019-10-17 20:20\nCategory: python\nTags: pelican, theme\nSlug: add-a-theme-to-pelican\nAuthors: Jack Wu\n\nAfter writing a post and publishing to github, it's time to make my pages looks different. [Pelican Theme Repository](https://github.com/getpelican/pelican-themes) provides many themes. Many thanks to those devevlopers and maintainers. I found my favior theme, [pelican-clean-blog](https://github.com/gilsondev/pelican-clean-blog). It really looks clean and nice. Let me show you how I applied it to my blog.\n\n## Download\n\n```\ncd ~/projects\ngit clone https://github.com/gilsondev/pelican-clean-blog.git\n```\n\n## Setup\n\n- Add following to pelicanconf.py, remeber to replace username with yours\n\n```\nTHEME = '/home/[username]/projects/pelican-clean-blog'\n```\n\nThat's Not it! There's a catch. A build error came up when I build for publishing. After googling, I found one [here](https://github.com/getpelican/pelican/issues/2489#issuecomment-472176621) Next step is how to fix it.\n\n## Fix Error\n\n- Go to folder /home/[username]/projects/pelican-clean-blog and find base.html\n- Find '|format(' and replace it with '.format(slug=' without quotes \n- Rebuild again.\n\nThe End.\n",
+			"file": "content/add-a-theme-to-pelican.md",
+			"file_size": 1238,
+			"file_write_time": 132159269552767275,
+			"settings":
+			{
+				"buffer_size": 1206,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/python-virtual-environment.md",
+			"settings":
+			{
+				"buffer_size": 1430,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "sample-page.md",
+			"settings":
+			{
+				"buffer_size": 260,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/fisrt-post-with-pelican.md",
+			"settings":
+			{
+				"buffer_size": 2248,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/hugo-github-publishing.md",
+			"settings":
+			{
+				"buffer_size": 1006,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/ubuntu-apache2-certbot.md",
+			"settings":
+			{
+				"buffer_size": 1343,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/docker-compose-mongodb-mongoexpress.md",
+			"settings":
+			{
+				"buffer_size": 918,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "content/webgl-starter.md",
+			"settings":
+			{
+				"buffer_size": 1207,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			],
+			[
+				"vir",
+				"Virtualenv: Activate"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 150.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/jack/projects/pelican",
+		"/home/jack/projects/pelican/content",
+		"/home/jack/projects/pelican/content/images"
+	],
+	"file_history":
+	[
+		"/home/jack/projects/pelican/content/webgl-starter.md",
+		"/home/jack/projects/pelican/content/ubuntu-apache2-certbot.md",
+		"/home/jack/projects/pelican/content/hugo-github-publishing.md",
+		"/home/jack/projects/pelican/note.md",
+		"/home/jack/projects/pelican/content/docker-compose-mongodb-mongoexpress.md",
+		"/home/jack/projects/pelican/pelicanconf.py",
+		"/home/jack/projects/pelican/content/fisrt-post-with-pelican.md",
+		"/home/jack/projects/pelican/requirements.txt",
+		"/home/jack/projects/pelican/publishconf.py",
+		"/home/jack/projects/pelican/content/add-a-theme-to-pelican.md",
+		"/home/jack/projects/pelican-clean-blog/templates/base.html",
+		"/home/jack/projects/pelican/output/feeds/all.atom.xml",
+		"/home/jack/projects/pelican/.gitignore",
+		"/home/jack/projects/pelican/content/posts/fisrt-post-with-pelican.md",
+		"/home/jack/projects/twstock/config.py",
+		"/home/jack/projects/twstock/fetch_mi.py",
+		"/home/jack/history20190726.txt",
+		"/home/jack/projects/myflask/fetch_mi.py",
+		"/home/jack/myflask.sh",
+		"/home/jack/projects/myflask/app.py",
+		"/home/jack/projects/myflask/myflask.sublime-project",
+		"/home/jack/dump_08-03-2019_20_01_41.sql",
+		"/home/jack/dump_28-02-2019_09_59_34.sql",
+		"/home/jack/projects/myflask/.gitignore",
+		"/home/jack/projects/myflask/test2.py",
+		"/home/jack/projects/myflask/test.py",
+		"/home/jack/projects/myflask/testpy",
+		"/home/jack/projects/myflask/test.txt",
+		"/home/jack/projects/myflask/docker-compose.yml",
+		"/home/jack/projects/myflask/stock.log",
+		"/home/jack/projects/myflask/templates/test.html",
+		"/home/jack/projects/myflask/models.py",
+		"/home/jack/Downloads/data-1536757590179.csv",
+		"/home/jack/Downloads/data-1536676124076.csv",
+		"/home/jack/Downloads/data-1536674527943.csv",
+		"/home/jack/Downloads/data-1536675932904.csv",
+		"/home/jack/Downloads/data-1536675722887.csv",
+		"/home/jack/Downloads/stock.log",
+		"/home/jack/Downloads/stock(1).log",
+		"/home/jack/projects/myflask/README.md",
+		"/home/jack/projects/myflask/data.csv",
+		"/home/jack/projects/myflask/config.py",
+		"/home/jack/projects/myflask/templates/index.html",
+		"/home/jack/projects/myflask/requirements.txt",
+		"/home/jack/projects/myflask/fetch.py",
+		"/home/jack/projects/Chatbot/demo.py",
+		"/home/jack/projects/stock_tw/app.py",
+		"/home/jack/projects/twstocks/recent_all.py",
+		"/home/jack/projects/twstocks/fetch.py",
+		"/home/jack/projects/twstocks/collection.py",
+		"/home/jack/projects/twstocks/test3.py",
+		"/home/jack/projects/titanic/test.py",
+		"/home/jack/projects/titanic/test2.py",
+		"/home/jack/projects/rasa_nlu/data/examples/rasa/demo-rasa.json",
+		"/home/jack/projects/rasa_nlu/data/examples/dialogflow/entities/cuisine.json",
+		"/home/jack/projects/rasa_nlu/data/test/demo-rasa-small.json",
+		"/home/jack/projects/rasa_nlu/data/test/dialogflow_en_converted_to_rasa.json",
+		"/home/jack/projects/rasa_nlu/data/test/demo-rasa-zh.json",
+		"/home/jack/projects/mysite/notes.txt",
+		"/home/jack/projects/myflask/Dockerfile",
+		"/home/jack/projects/myapp/bin/www",
+		"/home/jack/projects/mygraphql/index.js",
+		"/home/jack/projects/myapollo/app.js",
+		"/home/jack/projects/myapp/.dickerignore",
+		"/home/jack/projects/myapp/Dockerfile",
+		"/home/jack/projects/myapp/app.js",
+		"/home/jack/projects/myflask/fetch_stocks.py",
+		"/home/jack/Downloads/Titles.txt",
+		"/home/jack/projects/myflask/database.env",
+		"/home/jack/projects/myflask/manage.py",
+		"/home/jack/projects/myflask/runtime.txt",
+		"/home/jack/projects/myflask/Procfile",
+		"/home/jack/projects/stock_tw/stock_tw.sublime-project",
+		"/home/jack/projects/stock_tw/app/users/controller.py",
+		"/home/jack/projects/stock_tw/flasktest.py",
+		"/home/jack/projects/stock_tw/app/routes.py",
+		"/home/jack/projects/stock_tw/myapp.py",
+		"/home/jack/projects/stock_tw/app/__init__.py",
+		"/home/jack/projects/stock_tw/app/database.py",
+		"/home/jack/projects/stock_tw/models.py",
+		"/home/jack/projects/stock_tw/app/posts/controller.py",
+		"/home/jack/projects/stock_tw/app/baseresponse.py",
+		"/home/jack/projects/stock_tw/app/posts/__init__.py",
+		"/home/jack/projects/stock_tw/app/users/__init__.py",
+		"/home/jack/.config/sublime-text-3/Packages/Virtualenv/Virtualenv.sublime-settings",
+		"/home/jack/.config/sublime-text-3/Packages/Virtualenv/README.md",
+		"/home/jack/projects/stock_tw/bin/activate",
+		"/home/jack/projects/stock_tw/requirement.txt",
+		"/home/jack/projects/demo/src/main/java/com/example/demo/DemoApplication.java"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"go",
+			"goo",
+			"|format(",
+			"'|format('",
+			"INPUTDIR"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".format(slug="
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "content/add-a-theme-to-pelican.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1206,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								119,
+								119
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "content/python-virtual-environment.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1430,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								100,
+								100
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "sample-page.md",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 260,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "content/fisrt-post-with-pelican.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2248,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								97,
+								97
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "content/hugo-github-publishing.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1006,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								76,
+								76
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "content/ubuntu-apache2-certbot.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1343,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "content/docker-compose-mongodb-mongoexpress.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 918,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								156,
+								156
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 561.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "content/webgl-starter.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1207,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								68,
+								68
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 43.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 128.0
+	},
+	"output.exec":
+	{
+		"height": 223.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 116.0
+	},
+	"pinned_build_system": "python-venv",
+	"project": "pelican.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"activate",
+				"bin/activate"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/projects/testc/testc.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 282.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
