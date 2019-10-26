@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Jackneer - hugo</title><link href="https://jackneer.github.io/" rel="alternate"></link><link href="https://jackneer.github.io/feeds/hugo.atom.xml" rel="self"></link><id>https://jackneer.github.io/</id><updated>2019-03-13T14:26:05+08:00</updated><entry><title>Hugo GitHub Publishing</title><link href="https://jackneer.github.io/hugo-github-publishing.html" rel="alternate"></link><published>2019-03-13T14:26:05+08:00</published><updated>2019-03-13T14:26:05+08:00</updated><author><name>Jack</name></author><id>tag:jackneer.github.io,2019-03-13:/hugo-github-publishing.html</id><summary type="html">&lt;p&gt;There are a couple ways to publish hugo site to GitHub. I provide a simple way althouth url doesn't not look like https://[username].GitHub.io but https://[username].GitHub.io/[blog] in which [blog] is your repository name.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Jackneer - hugo</title><link href="https://jackneer.github.io/" rel="alternate"></link><link href="https://jackneer.github.io/feeds/hugo.atom.xml" rel="self"></link><id>https://jackneer.github.io/</id><updated>2019-03-13T14:26:05+08:00</updated><entry><title>Hugo GitHub Publishing</title><link href="https://jackneer.github.io/hugo-github-publishing.html" rel="alternate"></link><published>2019-03-13T14:26:05+08:00</published><updated>2019-03-13T14:26:05+08:00</updated><author><name>Jack</name></author><id>tag:jackneer.github.io,2019-03-13:/hugo-github-publishing.html</id><summary type="html">&lt;p&gt;There are a couple ways to publish hugo site to GitHub. I provide a simple way. The url doesn't not look like https://[username].GitHub.io but https://[username].GitHub.io/[blog] in which [blog] is your repository name.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;create a repository with a name that you want to be …&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;There are a couple ways to publish hugo site to GitHub. I provide a simple way althouth url doesn't not look like https://[username].GitHub.io but https://[username].GitHub.io/[blog] in which [blog] is your repository name.&lt;/p&gt;
+&lt;p&gt;create a repository with a name that you want to be …&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;There are a couple ways to publish hugo site to GitHub. I provide a simple way. The url doesn't not look like https://[username].GitHub.io but https://[username].GitHub.io/[blog] in which [blog] is your repository name.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;create a repository with a name that you want to be postfix of your domain name https://[username].GitHub.io, blog for example here.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;build your static site with following command at your root dicectory of hugo site&lt;/p&gt;
+&lt;p&gt;build your static site with following command at your root directory of hugo site&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;hugo -d docs

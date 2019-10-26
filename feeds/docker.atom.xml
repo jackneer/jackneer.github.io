@@ -56,4 +56,4 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Open browser at localhost:8081, Mongo-Express Login page should be loaded in a second. Then you may login with username and passwrod (admin/admin for example)&lt;/p&gt;</content><category term="docker"></category><category term="docer-compose"></category><category term="mongoDB"></category><category term="mongoexpress"></category></entry></feed>
+&lt;p&gt;Open browser at localhost:8081, Mongo-Express Login page should be loaded in a second. Then you may login with username and passwrod (admin/admin for example)&lt;/p&gt;</content><category term="docker"></category><category term="docker-compose"></category><category term="mongoDB"></category><category term="mongoexpress"></category></entry></feed>
