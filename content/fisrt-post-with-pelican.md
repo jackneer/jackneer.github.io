@@ -1,4 +1,4 @@
-Title: Fisrt Post with Pelican
+Title: First Post with Pelican
 Date: 2019-10-12 10:00
 Modified: 2019-10-15 20:00
 Category: python
@@ -6,21 +6,21 @@ Tags: python, pelican, git, github
 Slug: first-post-with-pelican
 Author: Jack
 
-From JekyII, Hugo and then Pelican, I am always looking for different ways of doing things. JekyII and Hugo are great, got more then what I need to make a blog. They have a great number of market share, supporting communities. If you are looking for a static site generator, they are one of the kind. Now, I am moving forward. Since leaning Python now, I want to do as many as possible with Python. After googling, Pelican goes into my house. Let me show you waht I have done.
+From JekyII, Hugo and then Pelican, I am always looking for different ways of doing things. JekyII and Hugo are great, got more then what I need to make a blog. They have a great number of market share, supporting communities. If you are looking for a static site generator, they are one of the kind. Now, I am moving forward. Since leaning Python now, I want to do as many as possible with Python. After googling, Pelican goes into my house. Let me show you what I have done.
 
 Python and git is required. I have python3 here.
 
 
 ## Setup Pelican
 
-- create a project forder
+- create a project folder
 
 ```
 mkdir myblog
 cd myblog
 ```
 
-- create python virutal environment 
+- create python virtual environment 
 
 ```
 python3 -m venv venv
@@ -65,7 +65,7 @@ make devserver
 
 ```
 cd content
-nano your-fisrt-post.md
+nano your-first-post.md
 ```
 
 - write your post with required parameters

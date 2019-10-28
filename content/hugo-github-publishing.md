@@ -4,11 +4,11 @@ Category: hugo
 Tags: hugo, git, github
 Author: Jack
 
-There are a couple ways to publish hugo site to GitHub. I provide a simple way althouth url doesn't not look like https://[username].GitHub.io but https://[username].GitHub.io/[blog] in which [blog] is your repository name.
+There are a couple ways to publish hugo site to GitHub. I provide a simple way. The url doesn't not look like https://[username].GitHub.io but https://[username].GitHub.io/[blog] in which [blog] is your repository name.
 
 1. create a repository with a name that you want to be postfix of your domain name https://[username].GitHub.io, blog for example here.
 
-2. build your static site with following command at your root dicectory of hugo site
+2. build your static site with following command at your root directory of hugo site
 ```bash
 hugo -d docs
 ```

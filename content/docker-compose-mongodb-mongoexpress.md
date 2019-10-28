@@ -1,7 +1,7 @@
 Title: Docker Compose Mongodb Mongoexpress
 Date: 2019-03-14T11:43:22+08:00
 Category: docker
-Tags: docker, docer-compose, mongoDB, mongoexpress
+Tags: docker, docker-compose, mongoDB, mongoexpress
 Author: Jack
 
 The following docker compose file, starts 2 docker containers MongoDB and Mongo-Express (a web-based MongoDB Management system).

@@ -4,7 +4,7 @@ Category: webgl
 Tags: webgl
 Author: Jack
 
-Create index.htnl file with following content
+Create index.html file with following content
 
 ```html
 <!DOCTYPE html>

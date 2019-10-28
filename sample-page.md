@@ -1,10 +1,9 @@
-Title: My super title
+Title: title
 Date: 2019-12-03 10:20
 Modified: 2019-12-05 19:30
 Category: Python
 Tags: pelican, publishing
 Slug: my-super-post
-Authors: Alexis Metaireau, Conan Doyle
-Summary: Short version for index and feeds
+Authors: Jack
 
-This is the content of my super blog post.
+content goes here.

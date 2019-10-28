@@ -1,12 +1,11 @@
 Title: Add a Theme to Pelican
 Date: 2019-10-17 20:20
-Category: Python
+Category: python
 Tags: pelican, theme
 Slug: add-a-theme-to-pelican
 Authors: Jack Wu
-Summary: Add a theme to Pelican
 
-After writing a post and publishing to github, it's time to make my pages looks different. [Pelican Theme Repository](https://github.com/getpelican/pelican-themes) provides many themes. Many thanks to those devevlopers and maintainers. I found my favior theme, [pelican-clean-blog](https://github.com/gilsondev/pelican-clean-blog). It really looks clean and nice. Let me show you how I applied it to my blog.
+After writing a post and publishing to github, it's time to make my pages looks different. [Pelican Theme Repository](https://github.com/getpelican/pelican-themes) provides many themes. Many thanks to those developers and maintainers. I found my favorite theme, [pelican-clean-blog](https://github.com/gilsondev/pelican-clean-blog). It really looks clean and nice. Let me show you how I applied it to my blog.
 
 ## Download
 
@@ -17,7 +16,7 @@ git clone https://github.com/gilsondev/pelican-clean-blog.git
 
 ## Setup
 
-- Add following to pelicanconf.py, remeber to replace username with yours
+- Add following to pelicanconf.py, remember to replace username with yours
 
 ```
 THEME = '/home/[username]/projects/pelican-clean-blog'

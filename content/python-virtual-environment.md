@@ -6,8 +6,8 @@ Tags: python
 Slug: python-virtual-environment
 Authors: Jack
 
-In python development, virutal environment is very useful for seperating python running environment.  For example different, different versions of python or packages can be applied in different virtual environment.  As a result, developers can easily switch among python virtual environment in a single machine.  Based on requirement, virtual environment can be rebuild by providing package requirements.
-Let me show you how to do it in python3.
+In python development, virtual environment is very useful for multiple python running environment.  For example different, different versions of python or packages can be applied in different virtual environment.  As a result, developers can easily switch among python virtual environment in a single machine.  Based on requirement, virtual environment can be rebuild by providing package requirements.
+Let me show you how to do it in Python 3.
 
 ### Create Virtual Environment
 
@@ -48,7 +48,7 @@ deactivate
 [venv]/
 ```
 
- You don't need virutal environment in version controll, because you have them all in requirements.txt. You can re-create virtual environment with it.
+ You don't need virtual environment in version control, because you have them all in requirements.txt. You can re-create virtual environment with it.
 
 ### Re-create Virtual Environment
 

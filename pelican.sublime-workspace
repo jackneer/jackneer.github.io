@@ -128,13 +128,11 @@
 	"buffers":
 	[
 		{
-			"contents": "Title: Add a Theme to Pelican\nDate: 2019-10-17 20:20\nCategory: python\nTags: pelican, theme\nSlug: add-a-theme-to-pelican\nAuthors: Jack Wu\n\nAfter writing a post and publishing to github, it's time to make my pages looks different. [Pelican Theme Repository](https://github.com/getpelican/pelican-themes) provides many themes. Many thanks to those devevlopers and maintainers. I found my favior theme, [pelican-clean-blog](https://github.com/gilsondev/pelican-clean-blog). It really looks clean and nice. Let me show you how I applied it to my blog.\n\n## Download\n\n```\ncd ~/projects\ngit clone https://github.com/gilsondev/pelican-clean-blog.git\n```\n\n## Setup\n\n- Add following to pelicanconf.py, remeber to replace username with yours\n\n```\nTHEME = '/home/[username]/projects/pelican-clean-blog'\n```\n\nThat's Not it! There's a catch. A build error came up when I build for publishing. After googling, I found one [here](https://github.com/getpelican/pelican/issues/2489#issuecomment-472176621) Next step is how to fix it.\n\n## Fix Error\n\n- Go to folder /home/[username]/projects/pelican-clean-blog and find base.html\n- Find '|format(' and replace it with '.format(slug=' without quotes \n- Rebuild again.\n\nThe End.\n",
 			"file": "content/add-a-theme-to-pelican.md",
-			"file_size": 1238,
-			"file_write_time": 132159269552767275,
 			"settings":
 			{
-				"buffer_size": 1206,
+				"buffer_size": 1208,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
@@ -142,7 +140,16 @@
 			"file": "content/python-virtual-environment.md",
 			"settings":
 			{
-				"buffer_size": 1430,
+				"buffer_size": 1428,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pelican.sublime-project",
+			"settings":
+			{
+				"buffer_size": 145,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -151,7 +158,16 @@
 			"file": "sample-page.md",
 			"settings":
 			{
-				"buffer_size": 260,
+				"buffer_size": 159,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 27,
 				"line_ending": "Unix"
 			}
 		},
@@ -165,11 +181,13 @@
 			}
 		},
 		{
+			"contents": "Title: Hugo GitHub Publishing\nDate: 2019-03-13T14:26:05+08:00\nCategory: hugo\nTags: hugo, git, github\nAuthor: Jack\n\nThere are a couple ways to publish hugo site to GitHub. I provide a simple way. The url doesn't not look like https://[username].GitHub.io but https://[username].GitHub.io/[blog] in which [blog] is your repository name.\n\n1. create a repository with a name that you want to be postfix of your domain name https://[username].GitHub.io, blog for example here.\n\n2. build your static site with following command at your root directory of hugo site\n```bash\nhugo -d docs\n```\n\n3. enable git and push it to GitHub repository.\n```bash\ngit init\ngit add -A\ngit commit -m \"init commit\"\ngit remote add origin https://github.com/[username]/[repo_name].git\ngit push -u origin master\n```\n\n4. go to setting of the repository of GitHub, in the GitHub Pages section set Source to [master branch /docs folder] from [None]\n\n5. open browser at https://[username].github.io/[blog], your new site should be readye",
 			"file": "content/hugo-github-publishing.md",
+			"file_size": 1002,
+			"file_write_time": 132165449079770354,
 			"settings":
 			{
-				"buffer_size": 1006,
-				"encoding": "UTF-8",
+				"buffer_size": 1003,
 				"line_ending": "Unix"
 			}
 		},
@@ -186,7 +204,7 @@
 			"file": "content/docker-compose-mongodb-mongoexpress.md",
 			"settings":
 			{
-				"buffer_size": 918,
+				"buffer_size": 919,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -228,6 +246,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"pcr",
+				"Package Control: Remove Package"
+			],
 			[
 				"Package Control: install",
 				"Package Control: Install Package"
@@ -406,7 +432,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -415,15 +441,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1206,
+						"buffer_size": 1208,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								119,
-								119
+								560,
+								560
 							]
 						],
 						"settings":
@@ -443,15 +469,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1430,
+						"buffer_size": 1428,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								100,
-								100
+								1112,
+								1112
 							]
 						],
 						"settings":
@@ -459,32 +485,32 @@
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 459.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "sample-page.md",
-					"semi_transient": true,
+					"file": "pelican.sublime-project",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 260,
+						"buffer_size": 145,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								173,
-								173
+								84,
+								84
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -495,19 +521,19 @@
 				},
 				{
 					"buffer": 3,
-					"file": "content/fisrt-post-with-pelican.md",
+					"file": "sample-page.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2248,
+						"buffer_size": 159,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								97,
-								97
+								139,
+								139
 							]
 						],
 						"settings":
@@ -523,24 +549,24 @@
 				},
 				{
 					"buffer": 4,
-					"file": "content/hugo-github-publishing.md",
-					"semi_transient": false,
+					"file": ".gitignore",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1006,
+						"buffer_size": 27,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								76,
-								76
+								27,
+								27
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"syntax": "Packages/Theme - Afterglow/Prefs/Langs/Git.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -551,6 +577,62 @@
 				},
 				{
 					"buffer": 5,
+					"file": "content/fisrt-post-with-pelican.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2248,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1402,
+								1402
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1683.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "content/hugo-github-publishing.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1003,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								631,
+								631
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 204.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
 					"file": "content/ubuntu-apache2-certbot.md",
 					"semi_transient": false,
 					"settings":
@@ -571,27 +653,27 @@
 							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 714.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "content/docker-compose-mongodb-mongoexpress.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 918,
+						"buffer_size": 919,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								156,
-								156
+								157,
+								157
 							]
 						],
 						"settings":
@@ -601,14 +683,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 561.0,
+						"translation.y": 306.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 9,
 					"file": "content/webgl-starter.md",
 					"semi_transient": false,
 					"settings":
@@ -620,8 +702,8 @@
 						"selection":
 						[
 							[
-								68,
-								68
+								141,
+								141
 							]
 						],
 						"settings":
@@ -631,7 +713,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 255.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 7,
