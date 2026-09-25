@@ -1,0 +1,25 @@
+# -------------------------------------------------------------------
+# Jack Wu's Docs — site configuration
+# Theme docs: https://just-the-docs.github.io/just-the-docs/
+# -------------------------------------------------------------------
+
+title: "Jack Wu's Docs"
+description: >-
+  A personal knowledge base and documentation site, published with GitHub Pages.
+
+# GitHub Pages "user site" (https://USERNAME.github.io) must keep baseurl "".
+url: "https://jackneer.github.io"
+baseurl: ""
+
+# Theme — fetched from GitHub at build time; nothing to vendor or update by hand.
+remote_theme: just-the-docs/just-the-docs@v0.10.6
+
+# ---- Just the Docs options ------------------------------------------------
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+
+aux_links:
+  "GitHub Repository": "https://github.com/jackneer/jackneer.github.io"
+
+footer_content: "Copyright &copy; 2026 Jack Wu. Licensed under the MIT License."
