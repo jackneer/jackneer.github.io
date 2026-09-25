@@ -12,7 +12,7 @@ url: "https://jackneer.github.io"
 baseurl: ""
 
 # Theme — fetched from GitHub at build time; nothing to vendor or update by hand.
-remote_theme: just-the-docs/just-the-docs@v0.10.6
+remote_theme: just-the-docs/just-the-docs@v0.12.0
 
 # ---- Just the Docs options ------------------------------------------------
 color_scheme: light

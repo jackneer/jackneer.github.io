@@ -3,8 +3,7 @@
 A personal knowledge base and documentation site, published with **GitHub Pages**
 and built with **Jekyll** using the [Just the Docs](https://just-the-docs.github.io/just-the-docs/) theme.
 
-> **Status: under construction — the site is NOT published yet.**
-> It lives on the `draft` branch, on purpose, so nothing can go live by accident.
+> **Status: LIVE** — published at **https://jackneer.github.io**
 
 ---
 
@@ -16,8 +15,17 @@ and built with **Jekyll** using the [Just the Docs](https://just-the-docs.github
 | `index.md` | Home page |
 | `docs/` | Knowledge base content (Markdown) |
 | `about.md` | About page |
-| `.github/workflows/pages.yml` | Deployment pipeline (armed; only fires on pushes to `main`) |
+| `.github/workflows/pages.yml` | Deployment pipeline (runs on every push to `main`) |
 | `LICENSE` | MIT license |
+
+## Branches
+
+| Branch | Purpose |
+|---|---|
+| `main` | **Live site.** Every push to `main` triggers a build + deploy to GitHub Pages. |
+| `draft` | Optional staging branch. Edit here and merge into `main` when you want to publish a change. |
+
+Either edit directly on `main` (fastest), or work on `draft` and merge to `main` when ready.
 
 ## Authoring content
 
@@ -33,25 +41,21 @@ and built with **Jekyll** using the [Just the Docs](https://just-the-docs.github
    ---
    ```
 
-3. Commit to `draft` and push. That's it — no build steps on your machine.
+3. Commit and push. The GitHub Actions workflow rebuilds and redeploys automatically.
 
 See [docs/writing-pages.md](docs/writing-pages.md) for the full guide.
 
 ## Previewing the site
 
-The site is not published yet, so there is no live URL. To preview:
-
+- **Live:** https://jackneer.github.io
 - **Locally (optional):** install Ruby and the Jekyll GitHub Pages gems, then run
   `bundle exec jekyll serve` and open http://localhost:4000.
-- **Via the deploy pipeline:** actually merging to `main` publishes — don't do
-  that until you're ready (see below).
 
-## Publishing checklist (do this only when you say go)
+## How deployment works
 
-1. GitHub → **Settings → Pages → Source: GitHub Actions**.
-2. Merge `draft` into `main` (or push the branch contents to `main`).
-3. The **Deploy site to GitHub Pages** workflow builds and deploys the site.
-4. The site goes live at **https://jackneer.github.io**.
-5. (Optional later) Connect a custom domain via **Settings → Pages → Custom domain**.
+- **Settings → Pages → Source: GitHub Actions**.
+- Pushes to `main` run `.github/workflows/pages.yml`:
+  checkout → `configure-pages` → `jekyll-build-pages` → `upload-pages-artifact` → `deploy-pages`.
+- You can also trigger it manually from the **Actions** tab (`workflow_dispatch`).
 
-Full details: [docs/publishing.md](docs/publishing.md).
+Details: [docs/publishing.md](docs/publishing.md).
