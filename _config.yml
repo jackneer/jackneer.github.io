@@ -23,3 +23,17 @@ aux_links:
   "GitHub Repository": "https://github.com/jackneer/jackneer.github.io"
 
 footer_content: "Copyright &copy; 2026 Jack Wu. Licensed under the MIT License."
+
+# ---- Files excluded from the published site --------------------------------
+# Keep repo/tooling metadata out of the generated output.
+exclude:
+  - AGENTS.md
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
