@@ -13,23 +13,29 @@ intro:
       database and no build tooling to install — GitHub Actions builds the site in
       the cloud on every push.
 feature_row:
-  - title: "Introduction"
-    excerpt: "What this site is and what lives in it."
-    url: /docs/introduction/
+  - title: "My Development Setup"
+    excerpt: "A full dev environment on a phone — Termux, PRoot Debian, OpenCode, and a cloud model doing the heavy lifting."
+    url: /docs/setup/
     btn_label: "Read"
     btn_class: "btn--primary"
-  - title: "Writing pages"
-    excerpt: "How to add or edit content, and how navigation works."
-    url: /docs/writing-pages/
+  - title: "Support Triage, With and Without Jev"
+    excerpt: "A proof-of-concept: turning a support queue into typed judgments with TypeSafe's Jev model."
+    url: /docs/jev-poc/
     btn_label: "Read"
     btn_class: "btn--primary"
-  - title: "Publishing"
-    excerpt: "How a change gets from a commit to the live site."
-    url: /docs/publishing/
-    btn_label: "Read"
+  - title: "Guides"
+    excerpt: "Longer how-to writeups."
+    url: /docs/guides/
+    btn_label: "Browse"
     btn_class: "btn--primary"
 ---
 
 {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}
+
+## How this site works
+
+- [Introduction]({% link docs/introduction.md %}) — what this site is about
+- [Writing pages]({% link docs/writing-pages.md %}) — how to add or edit content, and how navigation works
+- [Publishing]({% link docs/publishing.md %}) — how a change gets from a commit to the live site
