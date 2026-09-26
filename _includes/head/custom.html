@@ -1,0 +1,80 @@
+<!-- start custom head snippets -->
+
+{% comment %}
+  Mermaid diagrams via CDN — client-side only, no Jekyll plugin needed.
+
+  Usage in any Markdown page:
+
+      ```mermaid
+      graph LR
+        A[Draft] --> B[main]
+        B --> C[Deploy]
+      ```
+
+  kramdown turns that fence into <pre><code class="language-mermaid">,
+  while Mermaid only renders <div class="mermaid"> elements. This script:
+
+    1. Checks whether the page has a <code class="language-mermaid"> block.
+    2. If yes, dynamically loads the Mermaid UMD bundle from the CDN.
+    3. Transforms code blocks into .mermaid divs.
+    4. Calls mermaid.run() to render.
+
+  Both the transform and mermaid.run() are wrapped in try/catch so that
+  a failure in one diagram never breaks the rest of the page.
+{% endcomment %}
+<script>
+  (function () {
+    var hasMermaid = document.querySelector("code.language-mermaid");
+    if (!hasMermaid) return;
+
+    var script = document.createElement("script");
+    script.src =
+      "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js";
+    script.onload = function () {
+      try {
+        mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+      } catch (e) {
+        console.warn("Mermaid init error:", e);
+        return;
+      }
+
+      function render() {
+        try {
+          document
+            .querySelectorAll("code.language-mermaid")
+            .forEach(function (code) {
+              var target = code.closest("pre") || code;
+              var div = document.createElement("div");
+              div.className = "mermaid";
+              div.textContent = code.textContent;
+              target.replaceWith(div);
+            });
+
+          if (document.querySelector(".mermaid")) {
+            mermaid
+              .run({ querySelector: ".mermaid" })
+              .catch(function (err) {
+                console.warn("Mermaid render error:", err);
+              });
+          }
+        } catch (e) {
+          console.warn("Mermaid transform error:", e);
+        }
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", render);
+      } else {
+        render();
+      }
+    };
+
+    script.onerror = function () {
+      console.warn("Failed to load Mermaid from CDN");
+    };
+
+    document.head.appendChild(script);
+  })();
+</script>
+
+<!-- end custom head snippets -->
