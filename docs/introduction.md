@@ -2,6 +2,7 @@
 title: Introduction
 permalink: /docs/introduction/
 excerpt: "What this site is about."
+toc: false
 redirect_from:
   - /docs/introduction.html
 ---

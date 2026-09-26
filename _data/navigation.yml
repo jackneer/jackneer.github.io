@@ -8,7 +8,7 @@
 
 main:
   - title: "Docs"
-    url: /docs/introduction/
+    url: /docs/
   - title: "About"
     url: /about/
 

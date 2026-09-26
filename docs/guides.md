@@ -2,6 +2,7 @@
 title: Guides
 permalink: /docs/guides/
 excerpt: "Longer how-to writeups."
+toc: false
 redirect_from:
   - /docs/guides.html
 ---

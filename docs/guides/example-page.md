@@ -2,6 +2,7 @@
 title: Example page
 permalink: /docs/guides/example-page/
 excerpt: "A minimal example of a page nested under a sidebar group."
+toc: false
 redirect_from:
   - /docs/guides/example-page.html
 ---
