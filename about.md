@@ -1,12 +1,14 @@
 ---
 title: About
-nav_order: 99
+permalink: /about/
+excerpt: "About this site."
+redirect_from:
+  - /about.html
 ---
 
-# About
-
 Jack Wu's personal knowledge base, built with Jekyll and the
-[Just the Docs](https://just-the-docs.github.io/just-the-docs/) theme,
+[Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/) theme,
 published on [GitHub Pages](https://pages.github.com).
 
-This page is last in the sidebar because it has `nav_order: 99`.
+The source lives at
+[jackneer/jackneer.github.io](https://github.com/jackneer/jackneer.github.io).

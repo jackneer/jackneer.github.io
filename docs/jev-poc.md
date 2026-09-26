@@ -1,9 +1,10 @@
 ---
 title: Support Triage, With and Without Jev
-nav_order: 6
+permalink: /docs/jev-poc/
+excerpt: "Turning a support queue into typed judgments with TypeSafe's Jev model."
+redirect_from:
+  - /docs/jev-poc.html
 ---
-
-# Support Triage, With and Without Jev
 
 [Jev](https://docs.typesafe.ai) is TypeSafe's "System One" model. Instead of
 writing prose, you hand it a *state* and a set of typed *questions*, and it hands

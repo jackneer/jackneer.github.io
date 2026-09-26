@@ -1,11 +1,13 @@
 ---
 title: Introduction
-nav_order: 1
+permalink: /docs/introduction/
+excerpt: "What this site is about."
+redirect_from:
+  - /docs/introduction.html
 ---
-
-# Introduction
 
 Short intro about the site. Replace this page with your own overview.
 
-This page is the first entry in the sidebar because it has `nav_order: 1`. If you
-want to reorder the navigation, just change the `nav_order` values.
+Pages appear in the sidebar in the order they are listed in `_data/navigation.yml`.
+To reorder the navigation, move the entries in that file — see
+[Writing pages]({% link docs/writing-pages.md %}).

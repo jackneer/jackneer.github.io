@@ -1,17 +1,21 @@
 ---
 title: Guides
-nav_order: 4
-has_children: true
+permalink: /docs/guides/
+excerpt: "Longer how-to writeups."
+redirect_from:
+  - /docs/guides.html
 ---
 
-# Guides
+Longer how-to writeups live here. This page is the overview for the *Guides*
+group in the sidebar.
 
-This page is a *section*: it has `has_children: true`, and its sub-pages live in
-`docs/guides/` and declare `parent: Guides`.
-
-Add more guides by:
+Add a guide by:
 
 1. Creating a new Markdown file under `docs/guides/`.
-2. Adding front matter with `parent: Guides` and a unique `nav_order`.
+2. Giving it a `title` and a `permalink` (for example `/docs/guides/my-guide/`).
+3. Adding it under the `Guides` group's `children` in `_data/navigation.yml`.
 
-See the example sub-page: [Example page]({% link docs/guides/example-page.md %}).
+Step 3 is the one that is easy to forget — without it the guide builds but never
+shows up in the sidebar.
+
+See the example: [Example page]({% link docs/guides/example-page.md %}).

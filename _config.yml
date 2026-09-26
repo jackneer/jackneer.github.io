@@ -1,6 +1,6 @@
 # -------------------------------------------------------------------
 # Jack Wu's Docs — site configuration
-# Theme docs: https://just-the-docs.github.io/just-the-docs/
+# Theme docs: https://mmistakes.github.io/minimal-mistakes/docs/configuration/
 # -------------------------------------------------------------------
 
 title: "Jack Wu's Docs"
@@ -12,17 +12,62 @@ url: "https://jackneer.github.io"
 baseurl: ""
 
 # Theme — fetched from GitHub at build time; nothing to vendor or update by hand.
-remote_theme: just-the-docs/just-the-docs@v0.12.0
+remote_theme: mmistakes/minimal-mistakes@4.28.1
 
-# ---- Just the Docs options ------------------------------------------------
-color_scheme: light
-search_enabled: true
-heading_anchors: true
+# ---- Minimal Mistakes options ---------------------------------------------
+minimal_mistakes_skin: air
 
-aux_links:
-  "GitHub Repository": "https://github.com/jackneer/jackneer.github.io"
+search: true
+breadcrumbs: true
+enable_copy_code_button: true
 
-footer_content: "Copyright &copy; 2026 Jack Wu. Licensed under the MIT License."
+author:
+  name: "Jack Wu"
+  bio: "A personal knowledge base, written on a phone."
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jackneer"
+
+footer:
+  links:
+    - label: "GitHub Repository"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jackneer/jackneer.github.io"
+
+# ---- Plugins ---------------------------------------------------------------
+# Required by Minimal Mistakes; all are on the GitHub Pages allowlist.
+# `whitelist` mirrors `plugins` so a --safe build loads the same set.
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-redirect-from
+
+# ---- Front-matter defaults -------------------------------------------------
+# Minimal Mistakes has no fallback layout: without this block every page
+# renders without the theme. `sidebar.nav` points at the "docs" tree in
+# _data/navigation.yml.
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      sidebar:
+        nav: "docs"
+      toc: true
+      toc_sticky: true
 
 # ---- Files excluded from the published site --------------------------------
 # Keep repo/tooling metadata out of the generated output.

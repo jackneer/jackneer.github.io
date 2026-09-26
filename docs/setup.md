@@ -1,9 +1,10 @@
 ---
 title: My Development Setup
-nav_order: 5
+permalink: /docs/setup/
+excerpt: "The phone, the Linux layer, the agent, and the model behind it."
+redirect_from:
+  - /docs/setup.html
 ---
-
-# My Development Setup
 
 I do all of my development on a phone. This page is a snapshot of the whole
 setup — the hardware, the Linux layer, the AI coding agent, and the model behind

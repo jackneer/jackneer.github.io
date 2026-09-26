@@ -1,0 +1,35 @@
+# Site navigation.
+#
+# Minimal Mistakes does not build navigation from page front matter, so a new
+# page only appears in the sidebar once it is listed here.
+#
+#   main: the links in the masthead across the top of every page.
+#   docs: the sidebar tree, wired up via `sidebar.nav: "docs"` in _config.yml.
+
+main:
+  - title: "Docs"
+    url: /docs/introduction/
+  - title: "About"
+    url: /about/
+
+docs:
+  - title: "Getting Started"
+    children:
+      - title: "Introduction"
+        url: /docs/introduction/
+      - title: "Writing pages"
+        url: /docs/writing-pages/
+      - title: "Publishing"
+        url: /docs/publishing/
+      - title: "My Development Setup"
+        url: /docs/setup/
+  - title: "Guides"
+    children:
+      - title: "Overview"
+        url: /docs/guides/
+      - title: "Example page"
+        url: /docs/guides/example-page/
+  - title: "Notes"
+    children:
+      - title: "Support Triage, With and Without Jev"
+        url: /docs/jev-poc/

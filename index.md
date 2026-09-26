@@ -1,21 +1,35 @@
 ---
+layout: splash
 title: Home
-nav_order: 1
 permalink: /
+header:
+  overlay_color: "#4d6a8c"
+  overlay_filter: "0.4"
+excerpt: >-
+  A personal knowledge base, written in Markdown and published with GitHub Pages.
+intro:
+  - excerpt: >-
+      Every page here is a plain Markdown file in a public repository. There is no
+      database and no build tooling to install — GitHub Actions builds the site in
+      the cloud on every push.
+feature_row:
+  - title: "Introduction"
+    excerpt: "What this site is and what lives in it."
+    url: /docs/introduction/
+    btn_label: "Read"
+    btn_class: "btn--primary"
+  - title: "Writing pages"
+    excerpt: "How to add or edit content, and how navigation works."
+    url: /docs/writing-pages/
+    btn_label: "Read"
+    btn_class: "btn--primary"
+  - title: "Publishing"
+    excerpt: "How a change gets from a commit to the live site."
+    url: /docs/publishing/
+    btn_label: "Read"
+    btn_class: "btn--primary"
 ---
 
-# Welcome to Jack Wu's Docs
+{% include feature_row id="intro" type="center" %}
 
-This is a **knowledge base** published with [GitHub Pages](https://pages.github.com).
-All content is written in Markdown and lives in the repository — no database and no
-build tools to install on your computer.
-
-## Where to start
-
-- [Introduction]({% link docs/introduction.md %}) — what this site is about
-- [Writing pages]({% link docs/writing-pages.md %}) — how to add or edit content
-- [Publishing]({% link docs/publishing.md %}) — how to preview and go live
-
-## About
-
-See [About]({% link about.md %}).
+{% include feature_row %}

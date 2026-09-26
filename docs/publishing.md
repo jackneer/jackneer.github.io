@@ -1,9 +1,10 @@
 ---
 title: Publishing
-nav_order: 3
+permalink: /docs/publishing/
+excerpt: "How a change gets from a commit to the live site."
+redirect_from:
+  - /docs/publishing.html
 ---
-
-# Publishing
 
 The site is **live** at **[https://jackneer.github.io](https://jackneer.github.io)**.
 It is built and deployed automatically by GitHub Actions on every push to `main`.
