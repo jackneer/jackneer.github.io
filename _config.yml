@@ -14,39 +14,13 @@ baseurl: ""
 # Theme — fetched from GitHub at build time; nothing to vendor or update by hand.
 remote_theme: just-the-docs/just-the-docs@v0.12.0
 
-# ---- Branding --------------------------------------------------------------
-# Custom palette lives in _sass/color_schemes/jack.scss
-color_scheme: jack
-logo: "/assets/images/logo.svg"
-favicon_ico: "/assets/images/favicon.svg"
-
-# ---- Just the Docs options -------------------------------------------------
+# ---- Just the Docs options ------------------------------------------------
+color_scheme: light
 search_enabled: true
-search:
-  button: true
 heading_anchors: true
-back_to_top: true
-back_to_top_text: "Back to top"
-enable_copy_code_button: true
-
-# Callout styles, usable in Markdown as:  {: .note }
-callouts:
-  note:
-    title: Note
-    color: blue
-  warning:
-    title: Warning
-    color: red
 
 aux_links:
   "GitHub Repository": "https://github.com/jackneer/jackneer.github.io"
-
-# "Edit this page" links
-gh_edit_link: true
-gh_edit_link_text: "Edit this page on GitHub"
-gh_edit_repository: "https://github.com/jackneer/jackneer.github.io"
-gh_edit_branch: "main"
-gh_edit_view_mode: "edit"
 
 footer_content: "Copyright &copy; 2026 Jack Wu. Licensed under the MIT License."
 
