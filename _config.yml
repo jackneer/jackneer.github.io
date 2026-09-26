@@ -21,6 +21,11 @@ search: true
 breadcrumbs: true
 enable_copy_code_button: true
 
+# Index plain pages (site.pages) in the lunr store, not just collection docs.
+# Without this the theme ships an empty `var store = []` and search is silent.
+lunr:
+  search_within_pages: true
+
 author:
   name: "Jack Wu"
   bio: "A personal knowledge base, written on a phone."
